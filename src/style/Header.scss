@@ -1,0 +1,33 @@
+@import "./variables";
+
+
+header {
+    display: flex;
+    padding: 30px 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_content {
+    display: flex;
+    gap: 20px;
+    p {
+        @include text_size(18px, 600);
+        color: $dark_grey;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 1024px) {
+    header{
+        display: block;
+        padding: 16px 5px;
+    }
+
+    .header_content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        p{
+            @include text_size(14px, 600)
+        }
+    }
+}

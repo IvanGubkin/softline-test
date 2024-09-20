@@ -1,0 +1,45 @@
+@import "./variables";
+
+.corporate_life{
+    padding: 100px 70px 70px;
+}
+
+.corporate_life_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 55px;
+
+    h3{
+        @include text_size(56px, 600);
+    }
+}
+.corporate_life_title__button{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 56px;
+        width: 56px;
+        border-radius: 50%;
+        border: none;
+        background-color: $gray;
+    }
+
+}
+
+.corporate_life_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        pointer-events: none;
+        max-width: 100%;
+        margin-bottom: 28px;
+    }
+    
+    
+}

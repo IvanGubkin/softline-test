@@ -1,0 +1,59 @@
+@import "./variables"
+;
+
+.mission {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 140px 0px;
+    background-color: $dark_red;
+    margin-bottom: 100px;
+
+
+    img {
+        pointer-events: none;
+    }
+
+
+}
+
+.mission_content {
+    position: absolute;
+    text-align: center;
+    padding: 0px 70px;
+
+    h2 {
+        @include text_size(56px, 600);
+        color: white;
+        margin-bottom: 40px;
+    }
+
+    h3 {
+        color: white;
+        @include text_size(36px, 400);
+    }
+}
+
+@media (min-width: 0px) and (max-width: 1024px) {
+
+    .mission{
+        padding: 32px 0px;
+
+        img{
+            height: 186px;
+        }
+    }
+
+    .mission_content {
+        padding: 0px 5px;
+       
+        h2 {
+            @include text_size(28px, 600);
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            @include text_size(16px, 400);
+        }
+    }
+}
