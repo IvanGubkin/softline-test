@@ -1,7 +1,7 @@
 import "./base.scss";
 import getListBusinessContent from "./src/scripts/BusinessAreas";
-import MapNavigation from "./src/scripts/Map";
-import Map from "./src/scripts/Map";
+import {MapNavigation} from "./src/scripts/Map";
+
 
 
 // add list card of business areas
@@ -43,16 +43,16 @@ function getSrcPhotoCorporationLife() {
 
 function CorporationLife() {
     let corp_img = document.getElementById("corporation_life_photo");
-    corp_img.src = "./src/assets/CorporateLife/img1.png"
+    corp_img.src = "/img1.png"
 
     let back = document.getElementById("back");
     back.onclick = (e) => {
-      corp_img.src = `./src/assets/CorporateLife/${func("back")}`;
+      corp_img.src = `/${func("back")}`;
     };
 
     let next = document.getElementById("next");
     next.onclick = (e) => {
-       corp_img.src = `./src/assets/CorporateLife/${func("next")}`;
+       corp_img.src = `/${func("next")}`;
     };
 
 

@@ -1,10 +1,10 @@
 function changeImage(region) {
   const mapImage = document.getElementById("mapImage");
-  mapImage.src = `src/assets/Map/${region}.png`;
+  mapImage.src = `/${region}.png`;
 }
 
 
-export default function MapNavigation() {
+export function MapNavigation() {
   const menuItems = [
     { id: "All", label: "Все" },
     { id: "Moscow", label: "Москва" },

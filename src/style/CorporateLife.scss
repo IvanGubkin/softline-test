@@ -1,24 +1,26 @@
 @import "./variables";
 
-.corporate_life{
+.corporate_life {
     padding: 100px 70px 70px;
 }
 
-.corporate_life_title{
+.corporate_life_title {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 55px;
 
-    h3{
+    h3 {
         @include text_size(56px, 600);
     }
 }
-.corporate_life_title__button{
+
+.corporate_life_title__button {
     display: flex;
     align-items: center;
     gap: 20px;
-    button{
+
+    button {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -31,15 +33,33 @@
 
 }
 
-.corporate_life_content{
+.corporate_life_content {
     display: flex;
     align-items: center;
     justify-content: center;
-    img{
+
+    img {
         pointer-events: none;
         max-width: 100%;
         margin-bottom: 28px;
     }
-    
-    
+
+
+}
+
+@media (min-width: 0px) and (max-width: 1024px) {
+    .corporate_life{
+        padding: 50px 5px;
+    }
+    .corporate_life_title {
+
+        h3 {
+            @include text_size(28px, 600);
+        }
+    }
+
+    .corporate_life_title__button {
+        display: none;
+    }
+
 }

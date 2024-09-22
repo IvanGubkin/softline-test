@@ -43,7 +43,7 @@ export default function getListBusinessContent() {
 
 
     let img = document.createElement("img");
-    img.src = `./src/assets/BusinessAreas/${el.img}`;
+    img.src = `/${el.img}`;
 
     let div_content = document.createElement("div");
     div_content.className = "business_areas_content_card_content";

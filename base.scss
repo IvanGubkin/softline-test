@@ -8,6 +8,7 @@
 @import "./src/style/BusinessAreas.scss";
 @import "./src/style/CorporateLife.scss";
 @import "./src/style/Map.scss";
+@import "./src/style/CompensationPackage.scss";
 
 body{
  font-family: $proxima;
@@ -15,56 +16,4 @@ body{
 
 
 
-.business_areas {
-    h2 {
-        text-align: center;
-        margin-bottom: 50px;
-        font-size: 56px;
-        font-weight: 600;
-    }
-}
 
-.benefits {
-    h2 {
-        font-size: 56px;
-        text-align: center;
-        margin-bottom: 50px;
-        font-weight: 600;
-
-        span {
-            color: rgba(176, 23, 54, 1);
-        }
-    }
-
-    hr {
-        margin: 75px 30px 70px;
-        color: red;
-        background-color: aquamarine;
-    }
-}
-
-.line_package {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-}
-
-.package {
-    text-align: center;
-
-    p {
-        font-size: 19px;
-        font-weight: 400;
-    }
-}
-
-.circle {
-    height: 110px;
-    width: 110px;
-    border-radius: 50%;
-    background: rgba(0, 0, 0, 5%);
-    margin: 0px 34px 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
